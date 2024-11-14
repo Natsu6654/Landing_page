@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrar Productos (CRUD) - MangaTeca.com</title>
+  <link rel="stylesheet" href="diseño.css">
+  <script defer src="crud.js"></script>
+</head>
+<body>
+  
+  <header class="header-landing">
+    <div class="wrap-logo">
+      <img src="img/MANGA.png" alt="" class="logo-header">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="page1.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="crud-section">
+      <div class="wrap-crud-section">
+        <h2>Administrar Productos</h2>
+        <form id="crud-form">
+          <label for="nombre">Nombre del Producto:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" name="precio" required>
+
+          <label for="editorial">Editorial:</label>
+          <input type="text" id="editorial" name="editorial" required>
+
+          <label for="stock">Stock:</label>
+          <input type="number" id="stock" name="stock" required>
+
+          <label for="imagen">URL de la Imagen:</label>
+          <input type="text" id="imagen" name="imagen" required>
+          
+          <button type="submit">Agregar Producto</button>
+        </form>
+        
+        <h3>Lista de Productos</h3>
+        <table id="productos-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Editorial</th>
+              <th>Stock</th>
+              <th>Imagen</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí se cargarán los productos dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-section">
+    <div class="wrap-footer-section">
+      <div class="wrap-social-logos">
+        <ul>
+          <li><a href=""><img src="img/facebook.png" alt="" class="social-logo"></a></li>
+          <li><a href=""><img src="img/X.png" alt="" class="social-logo"></a></li>
+          <li><a href=""><img src="img/yootube.png" alt="" class="social-logo"></a></li>
+          <li><a href=""><img src="img/instagram.png" alt="" class="social-logo"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
